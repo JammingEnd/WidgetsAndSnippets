@@ -13,7 +13,7 @@ public class WaveSpawner : MonoBehaviour
 
 
 
-    public List<BloonWaveDef> WaveDefs;
+    public List<WaveDef> WaveDefs;
     public PathNode _startPosition;
 
    
@@ -28,7 +28,7 @@ public class WaveSpawner : MonoBehaviour
             StartWave(WaveDefs[0]);
         }
     }
-    public void StartWave(BloonWaveDef wave)
+    public void StartWave(WaveDef wave)
     {
         
         foreach (var group in wave.bloonGroupings)
